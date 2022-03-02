@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 html {
   box-sizing: border-box;
@@ -23,147 +23,13 @@ a {
   color: inherit;
 }
 
-
 body {
-  font-family: 'Noto Sans Mono', monospace;
+  height: 100vh;
+  padding: 20px 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #e5e5e5;
-  width: 600px;
-  padding: 15px 20px 40px;
-
-  &__title {
-    margin: 0;
-  }
-}
-
-.text-area {
-  position: relative;
-
-  &__empty-message {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -220%);
-    color: #818181;
-    font-size: 25px;
-    white-space: nowrap;
-  }
-
-  &__dialogs {
-    display: flex;
-    flex-direction: column-reverse;
-    list-style: none;
-    margin-bottom: 30px;
-    padding: 20px 0;
-    height: 500px;
-    overflow-y: auto;
-    border: 1px solid #cbcbcb;
-    background-color: #e8e8e8;
-  }
-
-  &__name-input {
-    width: 100%;
-    height: 25px;
-    margin-bottom: 15px;
-    padding-left: 5px;
-    border: 1px solid #cbcbcb;
-  }
-
-  &__message-wrap {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__text-input {
-    width: 80%;
-    height: 60px;
-    padding-left: 5px;
-    border: 1px solid #cbcbcb;
-  }
-
-  &__send-button {
-    width: 18%;
-    cursor: pointer;
-    border: 1px solid #cbcbcb;
-  }
-}
-
-.message {
-  position: relative;
-  width: 80%;
-  margin-left: auto;
-  margin-right: 20px;
-  background-color: #1dabffa1;
-  padding: 20px;
-  border-radius: 20px;
-  color: #ffffff;
-
-  &:after {
-    content: "";
-    position: absolute;
-    top: 20px;
-    right: -12px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 12px 12px 0 0;
-    border-color: #1dabffa1 transparent transparent transparent;
-  }
-
-  &:not(:first-child) {
-    margin-bottom: 20px;
-  }
-
-  &__name {
-    margin-bottom: 10px;
-    font-weight: 600;
-  }
-
-  &__body {
-    margin-bottom: 10px;
-    font-weight: 300;
-  }
-
-  &__date {
-    margin-left: auto;
-    text-align: end;
-    font-size: 10px;
-    color: #ffffff;
-  }
-
-  &__remove-btn {
-    display: none;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    color: #ffffff;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-
-  &:hover &__remove-btn {
-    display: block;
-  }
-}
-
-.text-area__dialogs::-webkit-scrollbar {
-  width: 6px;
-  background-color: #ffffff;
-}
-
-.text-area__dialogs::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: #b5b5b5;
-}
-
-.text-area__dialogs::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  background-color: #f9f9fd;
+#app {
+  height: 100%;
 }

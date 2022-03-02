@@ -103,13 +103,14 @@ module.exports = {
 		clean: true,
 	},
 	resolve: {
-		extensions: ['.js', '.jsx', '.json', '.png', '.css', '.scss'],
+		extensions: ['.js', '.jsx', '.ts', '.json', '.png', '.css', '.scss'],
 		alias: {
 			'@models': path.resolve(__dirname, 'src/models'),
 			'@components': path.resolve(__dirname, 'src/components'),
 			'@style': path.resolve(__dirname, 'src/assets/scss'),
 			'@images': path.resolve(__dirname, 'src/assets/img'),
-		}
+			'@mui/styled-engine': '@mui/styled-engine-sc'
+		},
 	},
 	optimization: optimization(),
 	devServer: {
